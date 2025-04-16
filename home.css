@@ -31,7 +31,7 @@ body {
     background-size: cover;
 }
 .page {
-    height: 70%;
+    height: 60%;
     max-width: 50%;
     display: flex;
     align-items: center;
