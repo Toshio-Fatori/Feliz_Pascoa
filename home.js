@@ -4,7 +4,7 @@ let message = document.getElementById("message");
 
 const mensagem_personalisada = () => {
     let random = Math.floor(Math.random() * 100);
-    let nome = formatar_nome(document.getElementById("input_Nome").value);
+    let nome = formatar_nome(document.getElementById("input_Nome").value.trim());
 
     if (random < 7) {
         exibir_popup("Parabéns " + nome + " a graça da sorte está ao seu lado, mostre ao Toshio esta mensagem e ganhe outro chocolate <br><br> obs: Válido somente enquanto durarem os estoques!");

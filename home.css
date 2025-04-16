@@ -18,7 +18,7 @@
 
 @media (max-width: 550px) {
     html {
-        font-size: 70%;
+        font-size: 60%;
     }
 
     h1 {
@@ -26,7 +26,7 @@
     }
 
     .page {
-        height: 70%;
+        height: 100%;
         padding: 2.5rem;
         border-radius: 10px;
         max-width: 300px;
@@ -35,21 +35,25 @@
 
 html {
     width: 100%;
-    height: 83%;
+    height: 80%;
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 1rem;
+    padding: 5rem 1.5rem;
     height: 100%;
     background-image: url("background.png");
     background-size: cover;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
 .page {
-    height: 60%;
+    height: 70%;
     max-width: 650px;
     display: flex;
     align-items: center;
@@ -62,7 +66,7 @@ body {
 }
 
 .footer {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .x {
@@ -113,7 +117,6 @@ input:focus {
     border: none;
     border-radius: 6px;
     background-color: #693434;
-    ;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
@@ -121,5 +124,5 @@ input:focus {
 }
 
 .botao:hover {
-    background-color: #693434;
+    background-color: #d34141;
 }
