@@ -18,15 +18,15 @@
 
 }
 
-@media (max-width: 750px) {
+@media (max-height: 1200px) {
     html {
-        font-size: 80%;
+        font-size: 90%;
     }
     .page {
-        max-width: 730px; 
+        max-width: 900px; 
         padding: 2rem; 
         border-radius: 10px;
-        min-width: 90%; 
+        min-width: 850px; 
       }
 }
 
