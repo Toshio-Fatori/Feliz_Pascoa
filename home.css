@@ -1,9 +1,10 @@
 * {
     margin: 0;
     font-family: "Delius", cursive;
+    font-size: 90%;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 750px) {
     html {
         font-size: 80%;
     }
@@ -15,9 +16,13 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
     html {
         font-size: 70%;
+    }
+
+    h1 {
+        text-align: center;
     }
 
     .page {
@@ -49,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     overflow-x: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     padding: 4rem;
     background-color: #faf9e7;
@@ -60,8 +65,22 @@ body {
     font-size: 0.8rem;
 }
 
+.x {
+    display: flex;
+    justify-content: end;
+}
+
+#message {
+    padding: 20px;
+}
+
 #popup {
+    max-width: 500px;
+    font-size: 2rem;
     display: none;
+    flex-direction: column-reverse;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .title {

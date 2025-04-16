@@ -7,17 +7,17 @@ const mensagem_personalisada = () => {
     let nome = formatar_nome(document.getElementById("input_Nome").value);
 
     if (random < 7) {
-        exibir_popup("Parabéns " + nome + " a graça da sorte está ao seu lado, mostre ao Toshio esta mensagem e ganhe outro chocolate<br> obs: Válido somente enquanto durarem os estoques!");
+        exibir_popup("Parabéns " + nome + " a graça da sorte está ao seu lado, mostre ao Toshio esta mensagem e ganhe outro chocolate <br><br> obs: Válido somente enquanto durarem os estoques!");
     } else {
         switch (remover_acentos(nome)) {
             case "Andre":
-                exibir_popup("Bem por vc me deixar ir na STOCK que eu estou fazendo isso.<br> Ganhe +1 chocolate<br> Hj foi essa página quem sabe na próxima não é o app de controle de caixa haha");
+                exibir_popup("Bem por vc me deixar ir na STOCK que eu estou fazendo isso.<br><br> Ganhe +1 chocolate<br><br> Hj foi essa página quem sabe na próxima não é o app de controle de caixa haha");
                 break;
             case "Ronaldo":
-                exibir_popup("Bem domingo é/foi o seu aniversário<br> Feliz Aniversário lhe dessejo tudo de bom<br> Pelo seu aniversário ganhe +1 chocolate");
+                exibir_popup("Bem domingo é/foi o seu aniversário<br><br> Feliz Aniversário lhe dessejo tudo de bom<br><br> Pelo seu aniversário ganhe +1 chocolate");
                 break;
             case "Pancada":
-                exibir_popup("Achou saboroso o meu ovo? eu te dou +1 para vc poder saborear os dois hahaha");
+                exibir_popup("Achou saboroso o meu ovo?<br> Eu te dou +1 para vc poder saborear os dois hahaha");
                 break;
             case "Toshio":
                 exibir_popup("Não subestimem o seu Deus Criador!!");
@@ -38,7 +38,7 @@ const mensagem_personalisada = () => {
 const exibir_popup = (mensagem) => {
     message.innerHTML = mensagem;
     form.style.display = "none";
-    popup.style.display = "block";
+    popup.style.display = "flex";
 }
 const ocultar_popup = () => {
     popup.style.display = "none";
@@ -52,7 +52,7 @@ const mensagem_padrao = (nome, random) => {
     } else if (random > 7) {
         return (nome + ", que este dia especial seja repleto de paz, amor e muitos chocolates!")
     } else {
-        return ("Parabéns " + nome + " a graça da sorte está ao seu lado, mostre ao Toshio esta mensagem e ganhe outro chocolate<br> obs: Válido somente enquanto durarem os estoques!");
+        return ("Parabéns " + nome + " a graça da sorte está ao seu lado, mostre ao Toshio esta mensagem e ganhe outro chocolate <br><br> obs: Válido somente enquanto durarem os estoques!");
     }
 }
 const remover_acentos = (string) => {
