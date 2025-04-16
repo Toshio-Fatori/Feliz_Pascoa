@@ -16,10 +16,10 @@
     <div class="page">
         <h1 class="title"> Feliz Páscoa!</h1>
         <div id="formulario">
-            <div id="form_nome">
-                <input type="text" id="input_Nome" placeholder="Insira seu nome🐰:" required>
-                <input type="submit" class="botao" value="OK" onclick="verificar()">
-            </div>
+            <form id="form_nome" onsubmit="verificar(event)">
+                <input type="text" id="input_Nome" placeholder="Insira seu nome🐰:">
+                <button type="submit" class="botao"> OK </button>
+            </form>
             <div id="erro" style="display: none;">Por favor, insira seu nome!</div>
         </div>
         <div id="popup">

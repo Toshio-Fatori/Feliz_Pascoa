@@ -3,21 +3,35 @@
     font-family: "Delius", cursive;
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
+    html {
+        font-size: 90%;
+    }
+
+    .page {
+        max-width: 900px;
+        padding: 3rem;
+        border-radius: 15px;
+        min-width: 90%;
+    }
+
+
+}
+
+@media (max-width: 750px) {
     html {
         font-size: 80%;
     }
-    
-
-  }
-@media (max-width: 750px) {
-    html {
-        font-size: 60%;
-    }
+    .page {
+        max-width: 730px; 
+        padding: 2rem; 
+        border-radius: 10px;
+        min-width: 90%; 
+      }
 }
 
 html {
-    width: 100%; 
+    width: 100%;
     height: 83%;
 }
 
@@ -30,59 +44,66 @@ body {
     background-image: url("background.png");
     background-size: cover;
 }
+
 .page {
     height: 60%;
-    max-width: 600px;
-    min-width: 450px;
+    max-width: 650px;
+    min-width: 500px;
     display: flex;
     align-items: center;
     overflow-x: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     padding: 4rem;
     background-color: #faf9e7;
     border-radius: 20px;
 }
+
 .footer {
- font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
-#popup{
+#popup {
     display: none;
 }
-.title{
+
+.title {
     /*font-family: "Playwrite RO", cursive;*/
     font-family: "Dancing Script", cursive;
     /*color: #e4ce06;*/
-    color:#5e2a2a;
-    font-size:6rem;
-    
+    color: #5e2a2a;
+    font-size: 6rem;
+
 }
-#input_Nome{
-  padding: 5px;
-  border: 1px solid ;
-  border-radius: 6px;
-  font-size: 1.5rem;
-  border-color: #5e2a2a;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
+
+#input_Nome {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    border-color: #5e2a2a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
 }
-input:focus{
-      outline: none;
+
+input:focus {
+    outline: none;
 }
+
 .botao {
-    
+
     padding: 5px;
     padding-right: 6px;
     border: none;
     border-radius: 6px;
-    background-color:#693434;;
+    background-color: #693434;
+    ;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
     transition: background 0.3s ease;
-  }
+}
 
-  .botao:hover {
+.botao:hover {
     background-color: #693434;
-  }
+}

@@ -2,7 +2,7 @@ let form = document.getElementById("formulario");
 let popup = document.getElementById("popup");
 let message = document.getElementById("message");
 
-const submit = () => {
+const mensagem_personalisada = () => {
     let random = Math.floor(Math.random() * 100);
     let nome = formatar_nome(document.getElementById("input_Nome").value);
 
@@ -68,13 +68,14 @@ const formatar_nome = (string) => {
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
         .join(' ');
 }
-const verificar = () => {
+const verificar = (event) => {
+    event.preventDefault();
     const nome = document.getElementById("input_Nome").value.trim();
     let erro = document.getElementById("erro");
     if (!nome) {
         erro.style.display = "block"
     } else {
         erro.style.display = "none"
-        submit()
+        mensagem_personalisada()
     }
 }
