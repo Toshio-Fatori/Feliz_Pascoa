@@ -22,6 +22,7 @@ const mensagem_personalisada = () => {
         );
         break;
       case "Ronaldo":
+        title.innerHTML =" Feliz Aniversário! ";
         exibir_popup(
           "Bem domingo é/foi o seu aniversário<br><br> Feliz Aniversário lhe dessejo tudo de bom<br><br> Pelo seu aniversário ganhe +1 chocolate"
         );
@@ -72,6 +73,9 @@ const mensagem_personalisada = () => {
             "??"
         );
         break;
+      case "Netchan":
+        title.innerHTML = "Achou !!";
+        exibir_popup("");
       case "Marie":
         title.innerHTML = "Muito Obrigado!";
         exibir_popup(
@@ -79,6 +83,9 @@ const mensagem_personalisada = () => {
         );
         break;
       case "Seiji":
+        title.innerHTML = "!!  <Error> :(  !!";
+        exibir_popup("Vá ti toma na seu cú");
+      case "Shiro No Oo":
         title.innerHTML = "Muito Obrigado!";
         exibir_popup(
           " Muito Obrigado pela ajuda com os chocolates.<br><br> Vc é meu duo não preciso falar muito, vlw por tudo :)"
@@ -111,13 +118,13 @@ const ocultar_popup = () => {
   footer.style.display = "block";
 };
 const mensagem_padrao = (nome, random) => {
-  if (random > 69) {
+  if (random > 68) {
     return nome + ", espero que goste do meu chocolate :)";
-  } else if (random > 38) {
+  } else if (random > 37) {
     return (
       nome + ", espero que sua páscoa seja repleta de felicidade e esperança!"
     );
-  } else if (random > 7) {
+  } else if (random > 6) {
     return (
       nome +
       ", que este dia especial seja repleto de paz, amor e muitos chocolates!"
