@@ -76,6 +76,7 @@ const mensagem_personalisada = () => {
       case "Netchan":
         title.innerHTML = "Achou !!";
         exibir_popup("");
+        break;
       case "Marie":
         title.innerHTML = "Muito Obrigado!";
         exibir_popup(
@@ -85,6 +86,7 @@ const mensagem_personalisada = () => {
       case "Seiji":
         title.innerHTML = "!!  <Error> :(  !!";
         exibir_popup("Vá ti toma na seu cú");
+        break;
       case "Shiro No Oo":
         title.innerHTML = "Muito Obrigado!";
         exibir_popup(
