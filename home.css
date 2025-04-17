@@ -6,7 +6,7 @@
 
 @media (max-width: 1200px){
     html {
-        font-size: 60%;
+        font-size: 50%;
     }
     .page {
         max-width: 50%;
@@ -67,16 +67,19 @@ h1 {
     max-width: 650px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 4rem;
+    padding: 3rem;
     background-color: #faf9e7;
     border-radius: 20px;
     overflow-x: auto;
 }
 
 .footer {
+    display: flex;
     font-size: 1rem;
+    padding: 1rem 0;
+    flex-direction: column;
 }
 
 .x {
@@ -89,6 +92,7 @@ h1 {
 }
 
 #popup {
+    padding: 3px, 0;
     max-width: 500px;
     font-size: 2rem;
     display: none;

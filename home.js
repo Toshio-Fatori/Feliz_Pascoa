@@ -1,6 +1,7 @@
-let form = document.getElementById("formulario");
-let popup = document.getElementById("popup");
-let message = document.getElementById("message");
+const form = document.getElementById("formulario");
+const popup = document.getElementById("popup");
+const message = document.getElementById("message");
+const footer = document.getElementById("footer");
 
 const mensagem_personalisada = () => {
     let random = Math.floor(Math.random() * 100);
@@ -38,11 +39,13 @@ const mensagem_personalisada = () => {
 const exibir_popup = (mensagem) => {
     message.innerHTML = mensagem;
     form.style.display = "none";
+    footer.style.display= "none";
     popup.style.display = "flex";
 }
 const ocultar_popup = () => {
     popup.style.display = "none";
     form.style.display = "block";
+    footer.style.display ="block";
 }
 const mensagem_padrao = (nome, random) => {
     if (random > 69) {
