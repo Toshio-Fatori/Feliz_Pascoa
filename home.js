@@ -84,7 +84,7 @@ const mensagem_personalisada = () => {
         );
         break;
       case "Seiji":
-        title.innerHTML = "!!  <Error> :(  !!";
+        title.innerHTML = "!!  Error :(  !!";
         exibir_popup("Vá ti toma na seu cú");
         break;
       case "Shiro No Oo":
