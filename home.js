@@ -75,7 +75,7 @@ const mensagem_personalisada = () => {
         break;
       case "Netchan":
         title.innerHTML = "Achou !!";
-        exibir_popup("                    ");
+        exibir_popup("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
         break;
       case "Marie":
         title.innerHTML = "Muito Obrigado!";
