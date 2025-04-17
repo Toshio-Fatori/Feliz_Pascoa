@@ -72,6 +72,7 @@ h1 {
     padding: 4rem;
     background-color: #faf9e7;
     border-radius: 20px;
+    overflow-x: auto;
 }
 
 .footer {
